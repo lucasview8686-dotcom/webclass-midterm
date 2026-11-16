@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>邏輯閘 - 數位邏輯新手村</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">首頁</a>
+        <a href="gates.html">邏輯閘</a>
+        <a href="ic.html">IC 介紹</a>
+        <a href="about.html">關於</a>
+    </nav>
+
+    <h1>基本邏輯閘</h1>
+    <p>以下是八種常見的基本邏輯閘：</p>
+
+    <div class="grid-container">
+        <div class="grid-box">
+            <h3>NOT (反閘)</h3>
+            <p>0 變 1，1 變 0</p>
+        </div>
+        <div class="grid-box">
+            <h3>AND (及閘)</h3>
+            <p>全為 1 才是 1</p>
+        </div>
+        <div class="grid-box">
+            <h3>OR (或閘)</h3>
+            <p>有 1 就是 1</p>
+        </div>
+        <div class="grid-box">
+            <h3>XOR (互斥或閘)</h3>
+            <p>不同為 1，相同為 0</p>
+        </div>
+        <div class="grid-box">
+            <h3>Buffer (緩衝閘)</h3>
+            <p>輸入等於輸出 (增強訊號推動力)</p>
+        </div>
+        <div class="grid-box">
+            <h3>NAND (反及閘)</h3>
+            <p>AND 的相反 (全為 1 才是 0)</p>
+        </div>
+        <div class="grid-box">
+            <h3>NOR (反或閘)</h3>
+            <p>OR 的相反 (有 1 就是 0)</p>
+        </div>
+        <div class="grid-box">
+            <h3>XNOR (反互斥或閘)</h3>
+            <p>XOR 的相反 (相同為 1，不同為 0)</p>
+        </div>
+    </div>
+    <h2>邏輯閘模擬器</h2>
+    <div>
+        <label>Input A:</label>
+        <select id="inputA">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select>
+
+        <label>邏輯閘:</label>
+        <select id="gateType">
+            <option value="AND">AND</option>
+            <option value="OR">OR</option>
+            <option value="XOR">XOR</option>
+            <option value="NAND">NAND</option>
+            <option value="NOR">NOR</option>
+            <option value="XNOR">XNOR</option>
+        </select>
+
+        <label>Input B:</label>
+        <select id="inputB">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select>
+
+        <button onclick="simulateGate()">計算輸出</button>
+        <p id="gateResult">輸出結果 (Output)：0</p>
+    </div>
+
+    <!-- 新增的 Footer -->
+    <footer>
+        <p>&copy; 2026 Digital Logic Tutorial - Web Programming Midterm Project</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

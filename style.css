@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.5;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #333;
+    padding: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+nav a:hover {
+    color: #ffcc00;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap: 15px;
+}
+.grid-box {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border: 1px solid #999;
+    transition: box-shadow 0.3s ease; /* 讓陰影漸變出現 */
+}
+
+.grid-box:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* 規定的表格樣式 */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+}
+table {
+    width: fit-content;
+}
+th {
+    background-color: #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* 自動填滿上方剩餘空間，把 footer 推到最底 */
+    font-size: 14px;
+}

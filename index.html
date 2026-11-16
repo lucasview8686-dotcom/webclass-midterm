@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>數位邏輯新手村</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">首頁</a>
+        <a href="gates.html">邏輯閘</a>
+        <a href="ic.html">IC 介紹</a>
+        <a href="about.html">關於</a>
+    </nav>
+
+    <h1>歡迎來到數位邏輯新手村</h1>
+    <p>這裡是資工系大二生Lucas的數位邏輯基礎筆記。</p>
+
+    <h2>學習重點</h2>
+    <ul>
+        <li>認識 AND、OR、NOT 等等的基本邏輯閘</li>
+        <li>了解常見的 74系列IC</li>
+    </ul>
+
+    <p>參考資料:<a href="https://zh.wikipedia.org/wiki/逻辑门" target="_blank">維基百科 - 邏輯閘</a></p>
+
+    <img src="https://techterms.com/img/xl/logic_gate_375.png" alt="logic-gates" width="300">
+    <h2>十進位轉二進位計算機</h2>
+    <div>
+        <input type="number" id="decInput" placeholder="輸入十進位正整數">
+        <button onclick="convertToBinary()">轉換</button>
+        <p id="binResult">二進位結果:</p>
+    </div>
+    <footer>
+        <p>&copy; 2026 Digital Logic Tutorial - Web Programming Midterm Project</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
